@@ -44,16 +44,25 @@ nav li, nav a{
 .produtos-titulo{
     font-size: 40px;
     font-weight: bold;
-    color: #8b4513;
+    color: #d4a373;
     list-style: none;
     font-family: "Merriweather";
+    text-align: center; /* Centraliza o texto dentro do contêiner */
 }
 .produtos-item:before{
-    content: "🌊";
+    content: "🐚";
 }
 /* Texto dos Produtos */
 .texto-produtos{
-    padding-left: 25%;
+    padding-left: 03%;
+    text-align:center; 
+    font-size: 18px; /* Tamanho do texto para leitura mais fácil */
+    line-height: 1; /* Aumenta o espaçamento entre as linhas para melhor leitura */
+    max-width: 70%; /* Limita a largura do texto para não ficar muito largo */
+    margin-left: 0%;
+    width: 75vw;
+    margin: 20px auto 40px auto;
+    text-align: center;
 }
 
 /* Container dos cards */
@@ -62,10 +71,14 @@ nav li, nav a{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     place-items: center;
-    width: 75vw;
+    width: 70vw;
     margin: auto;
-    /* gap: 20px; */
-    padding-bottom: 20px;
+    gap: 40px; 
+    padding-bottom: 50px;
+}
+
+main{
+    background: linear-gradient(white, white, white, #dbecf3); /*Permite fazer o GRADIENTE*/
 }
 /* Estilização dos cards*/
 .card {
@@ -87,6 +100,9 @@ nav li, nav a{
     height: 180px;
     object-fit: cover;
     border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
 }
 /* Título */
 .card h2{
