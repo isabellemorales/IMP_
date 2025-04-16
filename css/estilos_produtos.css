@@ -1,8 +1,12 @@
+@font-face {
+    font-family:'minhafonte';
+    src:url("../HastinaFreeFont.otf");
+}
 /*Estilização BODY do site*/
 body{
     margin: 0;
     border: 0;
-    font-family: 'Grostick';
+    font-family:'minhafonte';
 }
 
 .logo{
@@ -46,7 +50,7 @@ nav li, nav a{
     font-weight: bold;
     color: #d4a373;
     list-style: none;
-    font-family: "Merriweather";
+    font-family: 'minhafonte';
     text-align: center; /* Centraliza o texto dentro do contêiner */
 }
 .produtos-item:before{

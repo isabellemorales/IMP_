@@ -1,8 +1,13 @@
+@font-face {
+    font-family:'minhafonte';
+    src:url("../HastinaFreeFont.otf");
+}
+
 /*Estilização BODY do site*/
 body{
     margin: 0;
     border: 0;
-    font-family: 'Grostick';
+    font-family: 'minhafonte';
 }
 .logo{
     width: 005%;
@@ -50,7 +55,6 @@ nav li, nav a{
 .titulo_sobrenos{
     clear: left;
     text-align: center;
-    font-family: "Merriweather";
     font-size: 32px;
     color: #8b4513;
 }
@@ -61,7 +65,6 @@ nav li, nav a{
 }
 
 .para_sobre{
-    font-family: "Merriweather";
     font-size: 90px;
 }
 
@@ -116,7 +119,6 @@ nav li, nav a{
 .Benefícios{
     clear: left;
     text-align: center;
-    font-family: "Merriweather";
     font-size: 32px;
     color: #d4a373;
     position: relative;
@@ -177,7 +179,6 @@ list-style:"🌊";
 
 .titulo_video{
     text-align: center;
-    font-family: "Merriweather";
     font-size: 32px;
     color: #d4a373;
     justify-content: center;
