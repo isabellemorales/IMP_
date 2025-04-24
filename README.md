@@ -5,7 +5,7 @@ O **imp** é uma marca criada com HTML e CSS, com o objetivo de conectar cliente
 ## 📂 Estrutura de Páginas
 
 - `index.html` — Página inicial com apresentação do projeto, seção "Sobre Nós", mapa do local e vídeo.
-- `produtos.html` — Página com os serviços oferecidos aos restaurantes e comércios locais.
+- `produtos.html` — Página com os serviços oferecidos pela loja imp com o segmento beachwear.
 - `style.css` — Estilização da página principal (index).
 - `style_produtos.css` — Estilização específica da página de produtos.
 
@@ -22,5 +22,5 @@ O **imp** é uma marca criada com HTML e CSS, com o objetivo de conectar cliente
 - Mapa de localização do estabelecimento
 - Lista de serviços oferecidos, com valores
 - Cards responsivos com efeito hover
-- Seção de vídeo com conteúdo gastronômico
+- Seção de vídeo com conteúdo estilo praiano 
 - Rodapé com informações de contato e redes sociais
