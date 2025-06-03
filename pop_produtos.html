@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>imp</title>
+        <link href="css/estilos_pop.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="pop">
+                <h1 id="nome-produto">TÍTULO</h1>
+                <img id="imagem-produto" src=""/>
+                <p id="descricao-produto">DESCRIÇÃO</p>
+                <button type ="button" class="botao" onclick="window.close();">Fechar</button>
+                
+            <!--Captura as informações do produto-->
+            <script>
+                function getParametro(dado){
+                    const urlParams = new URLSearchParams(window.location.search);
+                    return urlParams.get(dado);
+                }
+
+                //PREENCHE  NA PÁGINA AS INFORMAÇÔES RECEBIDAS
+                document.getElementById("nome-produto").textContent = getParametro("nome");
+                document.getElementById("imagem-produto").src = getParametro("imagem");
+                document.getElementById("descricao-produto").textContent = getParametro("descricao");
+            </script>
+            </div>
+        </main>
+    </body>
+</html>

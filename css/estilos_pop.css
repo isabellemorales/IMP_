@@ -1,0 +1,160 @@
+/* ---------------- POP-UP ESTILO ----------------- */
+@font-face {
+    font-family: 'minhafonte';
+    src: url("../HastinaFreeFont.otf");
+}
+
+body {
+    background-color: #071A3D; /* Azul-marinho elegante */
+    font-family: 'minhafonte', sans-serif;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+/* Container POP */
+.pop {
+    background: linear-gradient(to bottom, #071A3D, #0d274f);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.08), 0 0 40px rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pop:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+}
+
+/* Título */
+.pop h1 {
+    color: #fff; /* Cor areia/dourado */
+    font-size: 32px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 8px rgba(255, 220, 168, 0.4);
+}
+
+/* Imagem */
+.pop img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.pop img:hover {
+    transform: scale(1.03);
+}
+
+/* Descrição */
+.pop p {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    line-height: 1.7;
+    text-align: justify;
+    backdrop-filter: blur(8px);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+/* Botão */
+.botao {
+    background-color: #ffdca8;
+    color: #071A3D;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.botao:hover {
+    background-color: white;
+    color: #071A3D;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+/*@font-face {
+    font-family:'minhafonte';
+    src:url("../HastinaFreeFont.otf");
+}
+/*Estilização BODY do site*/
+/*body{
+    margin: 0;
+    border: 0;
+    font-family:'minhafonte';
+}
+
+.logo{
+    width: 005%;
+    margin: 10px 0 0 10px;
+}
+/*Estilização do header do site*/
+/*header{
+    background-color: #071A3D;
+}
+/*ESTILIZAÇÃO DIV DO SITE*/
+/*.divHeader{
+    position: relative;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 10px; /* espaçamento baixo*/
+
+/*}
+
+/*ESTILIZAÇÃO MENU DO SITE*/
+/*nav {
+    position: absolute;
+    top: 10px;
+    right: 150px;
+}
+nav li, nav a{
+    display: inline;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+
+/*Estilizaçâo da POP de detalhes */
+/*.pop {
+    margin: 0;
+}
+.pop img{
+    width: 700;
+    height: 500;
+    padding-left: 10%;
+}
+
+.pop h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: blue;
+}
+
+.pop p{
+    padding: 2% 0 9% 7%;
+    margin:0;
+    white-space: pre-line;
+}*/

@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>imp</title>
+   <html>
+<head>
+    <title>imp</title>
+    <link href="css/estilos_contatos.css"rel= "stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="divHeader">
+            <!--Logotipo-->
+            <img src="img/logo.png.png" title="imp" class="logo">
+            <!--Menu-->
+            <nav> <!--barra de navegação-->
+                <ul>
+                    <!--Itens Menu-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--Conteúdo do site-->
+
+    <main>
+        <!--Título-->
+        <ul class="contatos-titulo">
+            <li class="contatos-item">Contatos</li>
+        </ul>
+        <div id="formRetorno" class="divRetorno">
+            <p id="textoRetorno" class="texto-contatos"></p>
+        </div>
+        <div id="formulario">
+        
+            <p class="texto-contatos">
+            Será um prazer te atender e oferecer o conforto que você merece. Aqui, cada detalhe é pensado para que você
+            se sinta em casa.
+            <br><br>Fale com a gente pelo Instagram, WhatsApp ou envie sua dúvida aqui pelo formulário. Vai ser um prazer te
+            atender! 
+            <br><br> Estamos à disposição para te ajudar :)
+            </p>
+
+        <form id="frmContato">
+            
+            <!--Caixa em volta FIELDSET-->
+            <fieldset>
+                <legend> Dados Pessoais </legend>
+
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nomesobrenome" name="nome" class="input-padrao" required>
+                <!--campo obrigaório required-->
+
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" class="input-padrao" required placeholder="seuemail@gmail.com">
+                <!--placeholder orientação do que escrver no campo-->
+               
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" class="input-padrao" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" cols="70" rows="10" class="input-padrao"></textarea>
+                <!--cols coluna rows linhas -->
+                
+                <label>Como prefere o nossso contato?
+                    <input type="radio" name="contato">E-Mail
+                    <input type="radio" name="contato">Telefone
+                    <input type="radio" name="contato">WhatsApp
+                </label>
+
+                <label> Qual o motivo do seu contato?</label>
+                <select>
+                    <option>Selecione</option>
+                    <option>Dúvida</option>
+                    <option>Sugestão</option>
+                    <option>Reclamação</option>
+                </select>
+            </fieldset>
+
+
+        <label class="chk">
+            <input type="checkbox" name="novidades">
+            Gostaria de receber nossas novidades e lançamentos de moda praia por E-mail?
+            </label>
+
+            <input type="submit" value="Enviar" id="enviar" class="enviar">
+        </form>
+        </div>
+    </main>
+        <ul class="contatos-titulo"></ul>
+        <!--<div id="formRetorno" class="divRetorno">
+            <p id="textoRetorno" class="texto-contatos"></p>
+        </div>-->
+    <!--Rodapé do site-->
+        <footer>
+            <img src= "img/logo.rodape.png" alt="imp" class="logo_footer"/>
+             <!-- <img src="../img/rodape.logo.1.png" class="fundo_footer"/> -->
+            <p>Encomendas on-line: <a href="https://wa.me/5511948880090"><i class="fa fa-whatsapp"></i> </a> (11) 94888-0090 | <a href="http://fa-instagram.com/imp"><i class="fa fa-instagram"></i> </a> @imp </p>
+        </footer>
+        <script src="js/forms.js"></script>
+    </body>
+</html>

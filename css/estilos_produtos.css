@@ -10,7 +10,7 @@ body{
 }
 
 .logo{
-    width: 005%;
+    width: 5%;
     margin: 10px 0 0 10px;
 }
 /*Estilização do header do site*/
@@ -147,3 +147,4 @@ footer p{
     width: 8%;
     margin-left: 84%;
 }
+
