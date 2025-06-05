@@ -7,22 +7,53 @@
         <main>
             <div class="pop">
                 <h1 id="nome-produto">TÍTULO</h1>
-                <img id="imagem-produto" src=""/>
+                <!--<img id="imagem-produto" src=""/>-->
+                <div class="slider">
+                    <button id="prevBtn">&#10094;</button>
+                    <img id="slider-img" src="" alt="">
+                    <button id="nextBtn">&#10095;</button>
+                </div>
                 <p id="descricao-produto">DESCRIÇÃO</p>
-                <button type ="button" class="botao" onclick="window.close();">Fechar</button>
                 
             <!--Captura as informações do produto-->
-            <script>
-                function getParametro(dado){
-                    const urlParams = new URLSearchParams(window.location.search);
-                    return urlParams.get(dado);
-                }
+                <script>
+                    function getParametro(dado){
+                        const urlParams = new URLSearchParams(window.location.search);
+                        return urlParams.get(dado);
+                    }
 
-                //PREENCHE  NA PÁGINA AS INFORMAÇÔES RECEBIDAS
-                document.getElementById("nome-produto").textContent = getParametro("nome");
-                document.getElementById("imagem-produto").src = getParametro("imagem");
-                document.getElementById("descricao-produto").textContent = getParametro("descricao");
-            </script>
+                    //PREENCHE  NA PÁGINA AS INFORMAÇÔES RECEBIDAS
+                    document.getElementById("nome-produto").textContent = getParametro("nome");
+                    //document.getElementById("imagem-produto").src = getParametro("imagem");
+                    document.getElementById("descricao-produto").textContent = getParametro("descricao");
+
+                    //Controle do Slider
+                    const imagens=getParametro("imagem")
+                                    ? getParametro("imagem").split(',')
+                                    : [];
+                    let index=0;
+                    const sliderImg=document.getElementById("slider-img");
+
+                    function MostrarImagem(){
+                        if(imagens.length > 0){
+                            sliderImg.src=imagens[index];
+                        }
+                    }
+
+                    document.getElementById("prevBtn").onclick = function() {
+                        index = (index-1 + imagens.length) % imagens.length;
+                        MostrarImagem();
+                    }
+
+                    document.getElementById("nextBtn").onclick = function() {
+                        index = (index+1) % imagens.length;
+                        MostrarImagem();
+                    }
+
+                    // Exibe a primeira imagem
+                    MostrarImagem();
+                </script>
+                <button type ="button" class="botao" onclick="window.close();">Fechar</button>
             </div>
         </main>
     </body>

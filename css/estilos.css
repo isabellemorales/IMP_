@@ -52,6 +52,7 @@ nav li, nav a {
     height: 300px;
     object-fit: cover; /*CObject-fit  serve para que a imagem fique adequada sem estar achatada*/
 }
+
 /*Estilização da sessão SOBRE NÓS*/
 .sobrenos{
     margin: 0;
@@ -139,7 +140,6 @@ nav li, nav a {
 }
 .titulo_produtos{
     background: linear-gradient(white, white, white, #dbecf3); /*Permite fazer o GRADIENTE*/
-    
 }
 
 .img_benefícios{
